@@ -23,7 +23,7 @@ const Wrapper = styled.nav`
   }
 `;
 
-export default function Navigation(): JSX.Element {
+export function Navigation(): JSX.Element {
   return (
     <Wrapper>
       <div>
