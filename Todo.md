@@ -1,0 +1,10 @@
+- setup theming
+- add navigation
+- add movie card
+- fetch from api
+- add chrome cast button
+- finish homepage
+- finish moviepage
+- deploy to server
+- add imdb api info
+- 

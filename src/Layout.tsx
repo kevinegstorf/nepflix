@@ -1,11 +1,15 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { Navigation } from "./components";
 
-export default function Layout(prop: any): JSX.Element {
+type Props = {
+  children: ReactNode;
+};
+
+export default function Layout(props: Props): JSX.Element {
   return (
     <div>
       <Navigation />
-      {prop.children}
+      {props.children}
     </div>
   );
 }
