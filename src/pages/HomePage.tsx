@@ -37,6 +37,9 @@ const responsive = {
 export default function HomePage(): JSX.Element {
   const [result, setResult] = React.useState<Array<Movie>>([]);
   React.useEffect(() => {
+    const google = document.createElement("google-cast-launcher");
+    const Test: any = document.querySelector("#test");
+
     async function fetchMyAPI() {
       const response = await fetch(config.url);
       return await response.json();
@@ -52,7 +55,7 @@ export default function HomePage(): JSX.Element {
         {result.map((movie: Movie) => {
           return (
             <Link to={`/movie/${movie.id}`} key={movie.id}>
-              <MovieCard title={movie.title} />
+              <MovieCard title={movie.title} rest={movie} />
             </Link>
           );
         })}

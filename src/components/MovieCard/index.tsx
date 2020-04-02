@@ -4,6 +4,7 @@ import config from "../../config";
 
 interface MovieCard {
   title: string;
+  rest: any;
 }
 
 const MovieWrapper = styled.article<{ url: string }>`
@@ -19,9 +20,10 @@ const MovieWrapper = styled.article<{ url: string }>`
     transform: scale(1.2);
   }
 `;
-export function MovieCard({ title }: MovieCard): JSX.Element {
+export function MovieCard({ title, rest }: MovieCard): JSX.Element {
   const imageName = title.replace(/ /g, "_");
   const url = `${config.imagePath}/${imageName}`;
+  console.log(rest);
 
-  return <MovieWrapper url={url} />;
+  return <MovieWrapper url={url}>{title}</MovieWrapper>;
 }
