@@ -29,7 +29,7 @@ const responsive = {
     items: 4
   },
   mobile: {
-    breakpoint: { max: 500, min: 464 },
+    breakpoint: { max: 500, min: 0 },
     items: 1
   }
 };
