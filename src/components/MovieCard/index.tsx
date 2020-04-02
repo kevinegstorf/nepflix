@@ -11,7 +11,7 @@ const MovieWrapper = styled.article<{ url: string }>`
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(${props => props.url});
-  width: 290px;
+  min-width: 290px;
   height: 200px;
   margin: 5px;
   transition: all 0.2s ease-in-out;

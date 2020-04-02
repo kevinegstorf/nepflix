@@ -34,13 +34,6 @@ export function Navigation(): JSX.Element {
           <li>Films</li>
         </ul>
       </div>
-      <div>
-        <ul>
-          <li>
-            <input type="text" />
-          </li>
-        </ul>
-      </div>
     </Wrapper>
   );
 }
